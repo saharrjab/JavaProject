@@ -1,6 +1,6 @@
 package base;
 
-public class Person {
+public abstract class Person {
     public static String name;
     private int age;
     private static int totalPersons = 0;
@@ -23,7 +23,9 @@ public class Person {
     public int getAge() {
         return age;
     }
-
+public void parle(){
+    System.out.println("je parle Person");
+}
     public void setAge(int age) {
         this.age = age;
     }
@@ -38,4 +40,5 @@ public class Person {
         } else
             return b;
     }
+
 }

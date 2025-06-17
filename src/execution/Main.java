@@ -1,17 +1,33 @@
 package execution;
 
-
 import base.Person;
+import fils.Student;
+import org.w3c.dom.ls.LSOutput;
 
 public class Main {
-    public static void main(String[] args) {
-        //Student
+
+        public void parle(){
+            System.out.println("je parle personne");
+        }
+        public static  int somme(int a,int b ){
+            return a+ b  ;
+        }
+        public static  int somme(int a , int b ,int c )
+        {return a + b + c;
+        }
+        public int somme (int a,int b ,int c , int d ) {
+            return a + b + c + d;
+        }
+
+        public static void main(String[] args) {
+            //Student
        /* Student etudiant = new Student("Ahmed", 20, "12345", 18.5);
 
         System.out.println("=== Étudiant : Informations générales ===");
         etudiant.displayInfo();
         System.out.println("=== Étudiant : Détails scolaires ===");
         etudiant.displayInfoStudent();
+
 
         etudiant.setName("vvvvv");
         System.out.println("=== Étudiant : Après modification du nom ===");
@@ -46,8 +62,21 @@ public class Main {
         */
 
 
-        System.out.println("hello "+ Person.minVar(2, 4));
+            System.out.println("hello "+ Person.minVar(2, 4));
+
+            Person p =new Student("ali",3 ,"m", 5.5);
+            p.parle();
 
 
-    }
+            System.out.println("before changes to sahar's information");
+            Main m = new Main();
+            System.out.println(m.somme(5,15));
+            System.out.println(m.somme(5 , 15, 25));
+            System.out.println(m.somme(5, 15 ,25 ,35));
+
+
+
+        }
 }
+
+

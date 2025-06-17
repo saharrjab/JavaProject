@@ -24,6 +24,12 @@ public class Student extends Person {
         this.studentId = studentId;
     }
 
+    //Override
+    public void Parle() {
+        System.out.println("je parle etudiant");
+
+    }
+
     public double getAverageScore() {
         return averageScore;
     }
